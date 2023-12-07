@@ -1,8 +1,9 @@
 export const GAME_STATS = {
+	TURN: 1,
 	IS_BLUE_TURN: true,
 	BOARD: [
-		['1', '2', '3'],
-		['4', '5', '6'],
-		['7', '8', '9'],
+		[null, null, null],
+		[null, null, null],
+		[null, null, null]
 	]
 }

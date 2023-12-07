@@ -10,5 +10,6 @@ export const DOM_BOARD_ITEMS = {
 	item8: document.getElementById('board-item-08'),
 	item9: document.getElementById('board-item-09'),
 	banner: document.getElementById('banner'),
+	tieBanner: document.getElementById('tie-banner'),
 	result: document.getElementById('result')
 }
