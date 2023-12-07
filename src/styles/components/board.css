@@ -32,6 +32,10 @@ section.board div.board__row div.board__item {
 	}
 }
 
+section.board div.board__row div.board__item.board__item--pressed {
+	pointer-events: none;
+}
+
 span.player-x,
 span.player-y {
 	font-size: calc(var(--multiplier) * 7rem);
