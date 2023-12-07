@@ -11,6 +11,7 @@ section.banner {
 	width: calc(var(--multiplier) * 32rem);
 	height: calc(var(--multiplier) * 16rem);
 	display: none;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--green-color);
@@ -23,6 +24,7 @@ section.banner.banner--visible {
 
 section.banner .banner__text,
 section.banner .banner__text span {
+	margin-bottom: calc(var(--multiplier) * 5px);
 	font-size: calc(var(--multiplier) * 3rem);
 	color: var(--board-color);
 }

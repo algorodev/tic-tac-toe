@@ -1,4 +1,4 @@
-import { DOM_BOARD_ITEMS } from './constants/dom.js'
+import { DOM_BOARD_ITEMS, DOM_LAYOUT_ITEMS } from './constants/dom.js'
 import { GAME_STATS } from './constants/game.js'
 import { buildElementToPrint } from './utils/builders.js'
 
@@ -12,13 +12,13 @@ DOM_BOARD_ITEMS.item1.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -31,13 +31,13 @@ DOM_BOARD_ITEMS.item2.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -50,13 +50,13 @@ DOM_BOARD_ITEMS.item3.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -69,13 +69,13 @@ DOM_BOARD_ITEMS.item4.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -88,13 +88,13 @@ DOM_BOARD_ITEMS.item5.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -107,13 +107,13 @@ DOM_BOARD_ITEMS.item6.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -126,13 +126,13 @@ DOM_BOARD_ITEMS.item7.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -145,13 +145,13 @@ DOM_BOARD_ITEMS.item8.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
@@ -164,17 +164,21 @@ DOM_BOARD_ITEMS.item9.addEventListener('click', () => {
 	if (GAME_STATS.TURN >= 5) isWinner = checkWinner()
 	if (GAME_STATS.TURN === 9) isTie = checkTie()
 	if (isWinner) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.banner.classList.add('banner--visible')
-		DOM_BOARD_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.banner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.result.textContent = GAME_STATS.IS_BLUE_TURN ? 'Blue' : 'Red'
 	}
 	if (isTie) {
-		DOM_BOARD_ITEMS.board.classList.add('board--hidden')
-		DOM_BOARD_ITEMS.tieBanner.classList.add('banner--visible')
+		DOM_LAYOUT_ITEMS.board.classList.add('board--hidden')
+		DOM_LAYOUT_ITEMS.tieBanner.classList.add('banner--visible')
 	}
 	++GAME_STATS.TURN
 	GAME_STATS.IS_BLUE_TURN = !GAME_STATS.IS_BLUE_TURN
 })
+
+DOM_LAYOUT_ITEMS.reset1.addEventListener('click', () => resetGame())
+
+DOM_LAYOUT_ITEMS.reset1.addEventListener('click', () => resetGame())
 
 export const checkWinner = () => {
 	for (let i = 0; i < 3; i++) {
@@ -199,4 +203,23 @@ export const checkIsBoardFull = () => {
 
 	return true
 }
+
 export const checkTie = () => !!(checkIsBoardFull() && !checkWinner())
+
+export const resetGame = () => {
+	for (let i = 1; i <= Object.keys(DOM_BOARD_ITEMS).length; i++) {
+		console.log(i)
+		DOM_BOARD_ITEMS[`item${i}`].replaceChildren()
+		DOM_BOARD_ITEMS[`item${i}`].classList.remove('board__item--pressed')
+	}
+	GAME_STATS.TURN = 1
+	GAME_STATS.IS_BLUE_TURN = true
+	GAME_STATS.BOARD = [
+		[null, null, null],
+		[null, null, null],
+		[null, null, null],
+	]
+	DOM_LAYOUT_ITEMS.board.classList.remove('board--hidden')
+	DOM_LAYOUT_ITEMS.banner.classList.remove('banner--visible')
+	DOM_LAYOUT_ITEMS.tieBanner.classList.remove('banner--visible')
+}
