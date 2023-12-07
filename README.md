@@ -2,7 +2,7 @@
 
 ### DEVELOPMENT STEPS
 1. HTML Structure ✅
-2. CSS Styling
+2. CSS Styling ✅
 3. JavaScript Logic
 4. Event Handling
 5. Winning Conditions
