@@ -1,7 +1,7 @@
 # TIC TAC TOE by __algorodev__
 
 ### DEVELOPMENT STEPS
-1. HTML Structure
+1. HTML Structure ✅
 2. CSS Styling
 3. JavaScript Logic
 4. Event Handling
