@@ -1,8 +1,28 @@
-.window {
+main.window {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--background-color);
+}
+
+section.banner {
+	width: calc(var(--multiplier) * 32rem);
+	height: calc(var(--multiplier) * 16rem);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--green-color);
+	border-radius: calc(var(--multiplier) * 5rem);
+}
+
+section.banner.banner--visible {
+	display: flex;
+}
+
+section.banner .banner__text,
+section.banner .banner__text span {
+	font-size: calc(var(--multiplier) * 3rem);
+	color: var(--board-color);
 }

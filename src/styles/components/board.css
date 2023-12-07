@@ -8,6 +8,10 @@ section.board {
 	border-radius: calc(var(--multiplier) * 5rem);
 }
 
+section.board.board--hidden {
+	display: none;
+}
+
 section.board div.board__row {
 	width: 100%;
 	height: calc(100% / 3);
