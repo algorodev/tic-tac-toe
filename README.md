@@ -22,6 +22,6 @@
 7. Displaying Results ✅
 8. Restarting the Game ✅
 9. Setting Player Names
-10. Tracking Scores
+10. Tracking Scores ✅
 11. Accessibility
 12. Responsive Design

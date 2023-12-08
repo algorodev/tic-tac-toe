@@ -1,15 +1,17 @@
 :root {
 	/* LAYOUT SETTINGS */
-	--multiplier:       2;
+	--multiplier:            2;
 	/* FONT SETTINGS */
-	--font:             'Montserrat', sans-serif;
+	--font:                  'Montserrat', sans-serif;
 	/* COLOR SETTING */
-	--board-color:      #F5F5F5;
-	--background-color: #333333;
-	--hover-color:      #3c3a3a;
-	--player-x-color:   #3498db;
-	--player-y-color:   #e74c3c;
-	--green-color:      #2ecc71;
+	--white-color:           #F5F5F5;
+	--background-color:      #333333;
+	--hover-color:           #3c3a3a;
+	--player-x-color:        #3498db;
+	--player-x-accent-color: #449eda;
+	--player-y-color:        #e74c3c;
+	--player-y-accent-color: #e36358;
+	--green-color:           #2ecc71;
 }
 
 * {

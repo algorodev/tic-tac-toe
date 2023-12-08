@@ -2,6 +2,7 @@ main.window {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--background-color);
@@ -26,5 +27,5 @@ section.banner .banner__text,
 section.banner .banner__text span {
 	margin-bottom: calc(var(--multiplier) * 5px);
 	font-size: calc(var(--multiplier) * 3rem);
-	color: var(--board-color);
+	color: var(--white-color);
 }

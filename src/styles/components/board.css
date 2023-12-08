@@ -1,11 +1,41 @@
+section.scoreboard {
+	width: calc(var(--multiplier) * 40rem);
+	height: calc(var(--multiplier) * 3rem);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: calc(var(--multiplier) * 5px);
+}
+
+section.scoreboard .scoreboard__label,
+section.scoreboard .scoreboard__label span {
+	font-size: calc(var(--multiplier) * 2rem);
+	color: var(--white-color);
+}
+
+section.scoreboard .scoreboard__label span#player-one-name {
+	color: var(--player-x-color);
+}
+
+section.scoreboard .scoreboard__label span#player-two-name {
+	color: var(--player-y-color);
+}
+
 section.board {
 	width: calc(var(--multiplier) * 32rem);
 	height: calc(var(--multiplier) * 32rem);
 	display: flex;
 	flex-direction: column;
 	padding: calc(var(--multiplier) * 2rem);
-	background-color: var(--board-color);
 	border-radius: calc(var(--multiplier) * 5rem);
+
+	&.board--player-x {
+		background-color: var(--player-x-accent-color);
+	}
+
+	&.board--player-y {
+		background-color: var(--player-y-accent-color);
+	}
 }
 
 section.board.board--hidden {

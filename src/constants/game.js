@@ -5,5 +5,7 @@ export const GAME_STATS = {
 		[null, null, null],
 		[null, null, null],
 		[null, null, null]
-	]
+	],
+	PLAYER_ONE_SCORE: 0,
+	PLAYER_TWO_SCORE: 0,
 }

@@ -17,4 +17,6 @@ export const DOM_LAYOUT_ITEMS = {
 	result: document.getElementById('result'),
 	reset1: document.getElementById('reset-button-01'),
 	reset2: document.getElementById('reset-button-02'),
+	player1Score: document.getElementById('player-one-score'),
+	player2Score: document.getElementById('player-two-score')
 }
