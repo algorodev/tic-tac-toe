@@ -1,0 +1,22 @@
+:root {
+	/* LAYOUT SETTINGS */
+	--multiplier:            2;
+	/* FONT SETTINGS */
+	--font:                  'Montserrat', sans-serif;
+	/* COLOR SETTING */
+	--white-color:           #F5F5F5;
+	--background-color:      #333333;
+	--hover-color:           #3c3a3a;
+	--player-x-color:        #3498db;
+	--player-x-accent-color: #449eda;
+	--player-y-color:        #e74c3c;
+	--player-y-accent-color: #e36358;
+	--green-color:           #2ecc71;
+}
+
+* {
+	margin:     0;
+	padding:    0;
+	font-size:  10px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,86 @@
+section.scoreboard {
+	width: calc(var(--multiplier) * 40rem);
+	height: calc(var(--multiplier) * 3rem);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: calc(var(--multiplier) * 5px);
+}
+
+section.scoreboard .scoreboard__label,
+section.scoreboard .scoreboard__label span {
+	font-size: calc(var(--multiplier) * 2rem);
+	color: var(--white-color);
+}
+
+section.scoreboard .scoreboard__label span#player-one-name {
+	color: var(--player-x-color);
+}
+
+section.scoreboard .scoreboard__label span#player-two-name {
+	color: var(--player-y-color);
+}
+
+section.board {
+	width: calc(var(--multiplier) * 32rem);
+	height: calc(var(--multiplier) * 32rem);
+	display: flex;
+	flex-direction: column;
+	padding: calc(var(--multiplier) * 2rem);
+	border-radius: calc(var(--multiplier) * 5rem);
+
+	&.board--player-x {
+		background-color: var(--player-x-accent-color);
+	}
+
+	&.board--player-y {
+		background-color: var(--player-y-accent-color);
+	}
+}
+
+section.board.board--hidden {
+	display: none;
+}
+
+section.board div.board__row {
+	width: 100%;
+	height: calc(100% / 3);
+	display: flex;
+	justify-content: space-evenly;
+	padding: calc(var(--multiplier) * 5px) 0;
+}
+
+section.board div.board__row div.board__item {
+	width: calc((100% / 3) - (calc((var(--multiplier) * 5px) * 2)));
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-color);
+	border-radius: calc(var(--multiplier) * 2.5rem);
+	transition: 300ms;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+section.board div.board__row div.board__item.board__item--pressed {
+	pointer-events: none;
+}
+
+span.player-x,
+span.player-y {
+	font-size: calc(var(--multiplier) * 7rem);
+	font-family: var(--font);
+	font-weight: 600;
+}
+
+span.player-x {
+	color: var(--player-x-color);
+}
+
+span.player-y {
+	color: var(--player-y-color);
+}

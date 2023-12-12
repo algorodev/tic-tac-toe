@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="src/styles/index.css">
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+<main id="window" class="window">
+	<section id="scoreboard" class="scoreboard">
+		<h3 class="scoreboard__label"><span id="player-one-name">Player 1:</span> <span id="player-one-score">0</span> Wins</h3>
+		<h3 class="scoreboard__label"><span id="player-two-name">Player 2:</span> <span id="player-two-score">0</span> Wins</h3>
+	</section>
+	<section id="board" class="board board--player-x">
+		<div class="board__row">
+			<div id="board-item-01" class="board__item"></div>
+			<div id="board-item-02" class="board__item"></div>
+			<div id="board-item-03" class="board__item"></div>
+		</div>
+		<div class="board__row">
+			<div id="board-item-04" class="board__item"></div>
+			<div id="board-item-05" class="board__item"></div>
+			<div id="board-item-06" class="board__item"></div>
+		</div>
+		<div class="board__row">
+			<div id="board-item-07" class="board__item"></div>
+			<div id="board-item-08" class="board__item"></div>
+			<div id="board-item-09" class="board__item"></div>
+		</div>
+	</section>
+	<section id="banner" class="banner">
+		<h3 class="banner__text"><span id="result"></span> is the winner!</h3>
+		<button id="reset-button-01" type="button" class="button">Reset!</button>
+	</section>
+	<section id="tie-banner" class="banner">
+		<h3 class="banner__text">There is a tie!</h3>
+		<button id="reset-button-02" type="button" class="button">Reset!</button>
+	</section>
+</main>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>
